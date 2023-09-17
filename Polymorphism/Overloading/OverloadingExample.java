@@ -1,4 +1,4 @@
-package Polymorphism;
+package Polymorphism.Overloading;
 
 public class OverloadingExample {
     public void methodOne(){

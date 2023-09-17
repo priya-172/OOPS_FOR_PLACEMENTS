@@ -1,6 +1,6 @@
 // In overloading method resolution is always based on reference type and runtime object 
 // won't play any role in overloading
-package Polymorphism;
+package Polymorphism.Overloading;
 class Animal{
 
 }

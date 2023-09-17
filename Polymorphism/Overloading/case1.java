@@ -1,5 +1,5 @@
 // Automatic promotion in overloading
-package Polymorphism;
+package Polymorphism.Overloading;
 
 public class case1 {
     public void methodOne(int i)
