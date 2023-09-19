@@ -83,3 +83,35 @@ public class CopyConstructorExample {
 | **Initialization Scope**                       | Typically used for initializing instance variables and performing other object-specific setup. | Used for any kind of instance-specific setup or activity that should occur during object creation. |
 
 This table summarizes the key differences between constructors and instance blocks, emphasizing their roles and characteristics.
+
+Can we override constructors in java?
+No, you cannot override constructors in Java. 
+
+Constructor overriding is not a valid concept in Java. Inheritance allows you to inherit constructors from a superclass, but you cannot change or override the constructor's signature (i.e., the constructor's name, return type, and parameter list) in the subclass.
+
+When you create a subclass, you can call the constructor of the superclass using the `super` keyword in the subclass's constructor, but you cannot change the signature of the superclass constructor. The subclass constructor can provide its own initialization code or call the superclass constructor using `super()`.
+
+Here's an example to illustrate this:
+
+```java
+class Parent {
+    Parent() {
+        System.out.println("Parent constructor");
+    }
+}
+
+class Child extends Parent {
+    Child() {
+        super(); // Calls the Parent class constructor
+        System.out.println("Child constructor");
+    }
+}
+
+public class ConstructorOverrideExample {
+    public static void main(String[] args) {
+        Child child = new Child();
+    }
+}
+```
+
+In this example, the `Child` class calls the `super()` constructor to invoke the constructor of the `Parent` class. However, it doesn't change the signature of the `Parent` class constructor. Constructor overriding is not allowed in Java, and each class has its own constructor(s) with its specific signature.

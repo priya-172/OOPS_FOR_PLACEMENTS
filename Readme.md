@@ -1,3 +1,18 @@
+comparison of classes and objects :
+
+| Aspect                                      | Class                                            | Object                                              |
+|---------------------------------------------|--------------------------------------------------|-----------------------------------------------------|
+| **Definition**                              | A class is a blueprint or template that defines the structure and behavior of objects. | An object is an instance of a class, representing a specific realization of the class. |
+| **Existence**                               | Classes are static entities that provide definitions but do not exist as physical entities in memory during program execution. | Objects are dynamic entities that exist in memory during program execution, representing instances of a class. |
+| **Creation**                                | Classes are used to create objects. You can create multiple objects of the same class. | Objects are created based on class blueprints. Each object has its own set of attributes and can perform actions independently. |
+| **Attributes and Methods**                  | Classes define attributes (fields/variables) and methods (functions) that objects of the class will have. | Objects have specific values for attributes and can invoke methods defined in their class. |
+| **Static vs. Dynamic**                      | Classes are static, providing a blueprint for objects. | Objects are dynamic and can change state during program execution. |
+| **Example**                                 | If you have a `Car` class, it defines the properties and behaviors shared by all cars. | If you create an object `myCar` based on the `Car` class, it represents a specific car with its own attributes and behavior. |
+| **Memory Allocation**                       | No memory is allocated for a class during program execution. | Objects are allocated memory in the heap during their creation. |
+| **Interactions**                            | Classes can interact with other classes and define relationships (e.g., inheritance, composition). | Objects can interact with other objects and invoke methods defined in other classes. |
+| **Role**                                    | Classes provide the structure and blueprint for creating objects. | Objects represent specific instances of classes and perform tasks in a program. |
+
+This table summarizes the key differences between classes and objects, highlighting their roles and characteristics in object-oriented programming.
 comparison of encapsulation and abstraction in a column format:
 
 | Aspect               | Encapsulation                         | Abstraction                            |
